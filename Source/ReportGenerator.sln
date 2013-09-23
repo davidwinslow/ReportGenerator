@@ -9,6 +9,27 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator.Tests", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGeneration", "ReportGeneration\ReportGeneration.csproj", "{F9DA507C-A2E5-478D-B9B9-FC0CAC5594D1}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "http://localhost:1547", "{47027333-85D6-4E98-A5EC-56014836D38D}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1547"
+		Debug.AspNetCompiler.PhysicalPath = "Website\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1547\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1547"
+		Release.AspNetCompiler.PhysicalPath = "Website\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1547\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Website\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +60,12 @@ Global
 		{F9DA507C-A2E5-478D-B9B9-FC0CAC5594D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9DA507C-A2E5-478D-B9B9-FC0CAC5594D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9DA507C-A2E5-478D-B9B9-FC0CAC5594D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{47027333-85D6-4E98-A5EC-56014836D38D}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
