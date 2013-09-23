@@ -22,7 +22,6 @@ namespace ReportDataCollector
             var jobDescriptions = _excel.WorksheetRangeNoHeader("A17", "A37", "Personal Information").Select(c => c[0].Value as string).ToList();
             occupation.JobDescription = jobDescriptions.Where(s => !string.IsNullOrEmpty(s)).ToList();
             return new ReportData(ClientInformation,background,occupation);
-            
         }
     }
 }

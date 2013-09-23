@@ -21,22 +21,24 @@ namespace ReportDataCollector
         public string AssessmentLanguage { get; set; }
         public bool DriverLicense { get; set; }
 
-        public string Gender {
+        public string Gender
+        {
             get { return GetGender(IDNumber); }
         }
 
-        public string HeShe {
+        public string HeShe
+        {
             get { return (Gender == "Female") ? "She" : "He"; }
         }
 
         private string GetGender(string idNumber)
         {
-            if(string.IsNullOrEmpty(IDNumber)) throw new Exception("id number not specified");
+            if (string.IsNullOrEmpty(IDNumber)) throw new Exception("id number not specified");
             int lastDigit;
-            if(!int.TryParse(idNumber.Last().ToString(), out lastDigit)) throw new Exception("id number not a valid format");
-            return (lastDigit%2 == 0) ? "Female" : "Male";
+            if (!int.TryParse(idNumber.Last().ToString(), out lastDigit)) throw new Exception("id number not a valid format");
+            return (lastDigit % 2 == 0) ? "Female" : "Male";
         }
     }
 
-    
+
 }

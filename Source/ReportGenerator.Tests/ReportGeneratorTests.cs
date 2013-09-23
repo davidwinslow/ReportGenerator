@@ -34,7 +34,7 @@ namespace ReportGenerator.Tests
             WordGenerator g = new WordGenerator("template.docx", "testData.xlsx");
             g.Generate();
             Thread.Sleep(500);
-            Process.Start(@"C:\Projects\ReportGenerator\ReportGenerator.Tests\bin\x86\Debug\template.docx");
+          //  Process.Start(@"C:\Projects\ReportGenerator\ReportGenerator.Tests\bin\x86\Debug\template.docx");
         }
     }
 }
