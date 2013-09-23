@@ -14,6 +14,8 @@ namespace ReportGeneration
         private readonly string _wordtemplateFilename;
         private readonly string _spreadSheetFileName;
 
+        
+
         public WordGenerator(string wordtemplateFilename, string spreadSheetFileName)
         {
             if(!File.Exists(wordtemplateFilename)) throw new FileNotFoundException("Could not find Word template");
