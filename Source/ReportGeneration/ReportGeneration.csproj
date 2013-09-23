@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NGS.Templater">
-      <HintPath>..\Lib\NGS.Templater.dll</HintPath>
+    <Reference Include="NGS.Templater, Version=1.8.2.21125, Culture=neutral, PublicKeyToken=b9c117a1d2974457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NGS.Templater.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
